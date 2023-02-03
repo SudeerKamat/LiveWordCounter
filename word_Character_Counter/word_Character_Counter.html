@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : SUDEER K
+  @group             : 
+  @last modified on  : 02-03-2023
+  @last modified by  : SUDEER K
+  Modifications Log
+  Ver   Date         Author     Modification
+  1.0   02-03-2023   SUDEER K   Initial Version
+-->
+<template>
+    <lightning-card title="Live Word, Character and Space Counter" icon-name="utility:record_alt">
+        <lightning-textarea lwc:ref="inputField" placeholder="Enter Your Text Here..." onchange={handleOnChange}></lightning-textarea>
+            <p class="moveRight">
+            <span><b lwc:ref="wordCount">0</b> Words, </span>
+            <span><b lwc:ref="charCount"> 0</b> Characters and </span>
+            <span><b lwc:ref="spaceCount"> 0</b> Spaces </span>
+          </p>
+    </lightning-card>
+</template>
